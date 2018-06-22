@@ -1,0 +1,140 @@
+
+.large-hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,
+    .2)), url('../img/hero.jpg');
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    
+    &__main-heading {
+        font-family: 'Tangerine';
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 1.2;
+        color: #fff;
+        margin: 0;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        transform: translateX(-50%, -50%);
+        width: 45%;
+        
+        & [class^=test] {
+           opacity: 0; 
+        }
+        
+        
+        & [class^=test] {
+           animation: fade-in 400ms ease-in both; 
+        }
+        
+        
+        & .testtwo {
+            animation-delay: 1100ms;
+        }
+        
+        & .testthree {
+            animation-delay: 2200ms;
+        }
+        
+        & .testfour {
+            font-style: normal;
+            color: $gold;
+            animation-delay: 4000ms;
+            display: block;
+            text-align: right;
+        }
+        
+        
+        @include breakpoint(max-width $medium) {
+            font-size: 8rem;
+        }
+    }
+    
+    &__wrap {
+        max-width: 80%;
+        position: absolute;
+        top: 60%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        
+        @include breakpoint(max-width $medium) {
+            left: 40%;
+            max-width: 90%;
+        }
+        
+        @include breakpoint(max-width $small) {
+            left: 50%;
+            top: 40%;
+        }
+    }
+    
+    &__logo {
+        width: 18em;
+        height: 18em;
+        animation: pop-in 6000ms 600ms cubic-bezier(0, .9, .3, 1.2) forwards;
+        
+    }
+
+    &__sub-heading {
+        font-size: 2.5rem;
+        line-height: 1;
+        color: #fff;
+        animation: pop-in 700ms 800ms cubic-bezier(0, .9, .3, 1.2) forwards;
+        opacity: 0;
+        
+        @include breakpoint(max-width $medium) {
+            font-size: 1.7rem;
+        }
+        
+        &-span {
+            color: $pink;
+        }
+    }
+    
+    &__btn {
+        margin-top: 2em;
+        font-weight: 700;
+        display: inline-block;
+        padding: 1em 1.5em;
+        background-image: linear-gradient($pink, darken($pink, 20%));
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 2px;
+        box-shadow: .1em .1em .2em rgba(0,0,0,.6);
+        transition: all 300ms ease-out;
+        animation: pop-in 700ms 1000ms cubic-bezier(0, .9, .3, 1.2) forwards;
+        opacity: 0;
+        
+    &:hover {
+        color: $pink;
+        background-color: white;
+        background-image: none;
+    }
+        
+    }
+    
+    
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(3.8);
+    }  
+    
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}

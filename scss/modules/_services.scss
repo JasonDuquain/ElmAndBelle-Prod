@@ -1,0 +1,45 @@
+
+.services {
+    background-color: #fbfbfb;
+    
+    &__table {
+        width: 70%;
+        margin: 0 auto 3em auto;
+        border-collapse: collapse;
+        
+        caption {
+            text-align: left;
+            font-size: 1.2em;
+            padding-bottom: .3em;
+            font-weight: 700;
+        }
+      
+        tr:nth-of-type(odd){
+          background-color: lighten($pink, 15%);
+        }
+        
+        td, th {
+            font-size: 1.1em;
+            border: 1px solid $pink;
+            padding: 3px 7px 2px 7px;
+        }
+        
+        th {
+          text-transform:uppercase;
+          text-align: cener;
+          padding-top: 5px;
+          padding-bottom: 4px;
+          background: rgb(229,76,16);
+          background: linear-gradient(to bottom, $pink, darken($pink, 10%));
+          color: white;
+        }
+    }  
+    
+}
+
+
+
+
+
+
+

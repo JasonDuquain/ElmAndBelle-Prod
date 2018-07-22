@@ -23,27 +23,26 @@
         width: 45%;
         
         & [class^=test] {
-           opacity: 0; 
+           opacity: 0;
         }
         
         
         & [class^=test] {
-           animation: fade-in 400ms ease-in both; 
+           animation: fade-in 800ms 700ms ease-in both; 
         }
         
-        
         & .testtwo {
-            animation-delay: 1100ms;
+            animation-delay: 2000ms;
         }
         
         & .testthree {
-            animation-delay: 2200ms;
+            animation-delay: 3600ms;
         }
         
         & .testfour {
             font-style: normal;
             color: $gold;
-            animation-delay: 4000ms;
+            animation-delay: 4700ms;
             display: block;
             text-align: right;
         }

@@ -1,9 +1,13 @@
 
+svg {
+    width: 22em;
+    height: auto;
+    margin-top: -12px;
+}
+
 .site-header {
     padding: 0 1.5em;
     background-color: #fff;
-    //position: absolute;
-    //z-index: 101;
     width: 100%;
     transition: all 400ms ease-out;
     background-color: $gold;
@@ -13,6 +17,7 @@
     }
     
     &__logo-link {
+        margin-top: -3px;
         position: absolute;
     }
     

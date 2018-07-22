@@ -30,3 +30,39 @@ body {
     display: table;
     clear: both;
 }
+
+
+section {
+    padding: 6em;
+}
+
+.sect-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.7em;
+    
+    &::before, &::after {
+        content: ""; 
+        width: 1em;
+        height: 3px;
+        background-image: linear-gradient(to right, $gold, darken($gold, 30%));
+        margin: 0 1rem;
+    }
+    
+    &::after {
+        background-image: linear-gradient(to left, $gold, darken($gold, 30%));
+    }
+}
+
+
+
+
+
+
+

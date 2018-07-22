@@ -2,12 +2,11 @@
 
 .intro {
     
-    
     &__grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1.5em;
-        
+        margin-bottom: 3em;
     }
     
     /*****OVERLAP GALLERY******/
@@ -58,6 +57,22 @@
             margin-bottom: .8em;
         }
         
+    }
+    
+    /*****BRAND LOGOS*****/
+    &__brands {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        width: 80%;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    &__brands__img {
+        width: 150px;
+        height: auto;       
     }
       
 }

@@ -9,6 +9,7 @@
 
 :root {
     font-size: 1em;
+    scroll-behavior: smooth;
     
     @include breakpoint(max-width $large) {
         font-size: .9em;

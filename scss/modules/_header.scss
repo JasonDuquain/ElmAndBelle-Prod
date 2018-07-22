@@ -1,10 +1,4 @@
 
-svg {
-    width: 22em;
-    height: auto;
-    margin-top: -12px;
-}
-
 .site-header {
     padding: 0 1.5em;
     background-color: #fff;
@@ -22,8 +16,9 @@ svg {
     }
     
     &__logo {
-        width: 18em;
+        width: 22em;
         height: auto;
+        margin-top: -12px;
     }
     
     &__nav-wrap {

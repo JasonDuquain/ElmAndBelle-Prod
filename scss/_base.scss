@@ -61,6 +61,30 @@ section {
     }
 }
 
+@keyframes target {
+    0% {
+        background-color: $gold;
+        letter-spacing: 6px;
+    }
+    
+    100% {
+        
+    }
+}
+
+#services:target h2 {
+    animation: target 2000ms ease-out;
+}
+
+#gallery:target h2 {
+    animation: target 2000ms ease-out 500ms;
+}
+
+#testimonials:target h2 {
+    animation: target 2000ms ease-out 2400ms;
+}
+
+
 
 
 

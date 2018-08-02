@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elm and Belle Salon</title>
+    <link rel="stylesheet" href="css/baguetteBox.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,300,300i,400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
@@ -177,7 +178,7 @@
         </div>
     </div> 
     
-    <section class="intro">    
+    <section class="intro" id="services">    
         <h2 class="intro__heading sect-heading">Meet Elm &amp; Belle</h2>
         
         <div class="intro__grid">      
@@ -202,16 +203,17 @@
             </div>             
         </div>  
         
-        <div class="intro__brands">
-            <img src="img/brands/redken-1.svg" alt="redken" class="intro__brands__img intro__brands__img-1">
-            <img src="img/brands/Pureology.png" alt="pureology" class="intro__brands__img intro__brands__img-2">
-            <img src="img/brands/pravana-logo.png" alt="pravana" class="intro__brands__img intro__brands__img-8">
-            <img src="img/brands/wella-1.svg" alt="wella" class="intro__brands__img intro__brands__img-3">
-            <img src="img/brands/Moroccanoil.png" alt="moroccanoil" class="intro__brands__img intro__brands__img-4">
-            <img src="img/brands/IGK.jpg" alt="igk" class="intro__brands__img intro__brands__img-5">
-            <img src="img/brands/amika.png" alt="amika" class="intro__brands__img intro__brands__img-6">
-            <img src="img/brands/miracle10.jpg" alt="miracle10" class="intro__brands__img intro__brands__img-7">
-        </div>
+            <h3 class="intro__brands__heading">Brands</h3>
+            <div class="intro__brands">
+                <img src="img/brands/redken-1.svg" alt="redken" class="intro__brands__img intro__brands__img-1">
+                <img src="img/brands/Pureology.png" alt="pureology" class="intro__brands__img intro__brands__img-2">
+                <img src="img/brands/pravana-logo.png" alt="pravana" class="intro__brands__img intro__brands__img-8">
+                <img src="img/brands/wella-1.svg" alt="wella" class="intro__brands__img intro__brands__img-3">
+                <img src="img/brands/Moroccanoil.png" alt="moroccanoil" class="intro__brands__img intro__brands__img-4">
+                <img src="img/brands/IGK.jpg" alt="igk" class="intro__brands__img intro__brands__img-5">
+                <img src="img/brands/amika.png" alt="amika" class="intro__brands__img intro__brands__img-6">
+                <img src="img/brands/miracle10.jpg" alt="miracle10" class="intro__brands__img intro__brands__img-7">
+            </div>
          
     </section>
     
@@ -335,7 +337,7 @@
         </table>
     </section>
     
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2 class="intro__heading sect-heading">Elm &amp; Belle Lookbook</h2>
         
         <div class="gallery__main">
@@ -405,10 +407,74 @@
               </div>
             </div>-->
             
+            <div class="demo">              
+                <a href="img/gal-1.jpg" data-caption="Caption 1">
+                    <figure>
+                        <img src="img/gal-1.jpg">
+                        <figcaption>hay</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-1-wide.jpg" data-caption="Caption 2">
+                    <figure>
+                         <img src="img/gal-1-wide.jpg">
+                         <figcaption>you</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-2-tall.jpg" data-caption="Caption 3">
+                    <figure>
+                        <img src="img/gal-2-tall.jpg">
+                        <figcaption>wait</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-3.jpg" data-caption="Caption 3">
+                    <figure>
+                        <img src="img/gal-3.jpg">
+                        <figcaption>wait</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-4.jpg" data-caption="Caption 3">
+                    <figure>
+                        <img src="img/gal-4.jpg">
+                        <figcaption>wait</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-4-tall.jpg" data-caption="Caption 3">
+                    <figure>
+                        <img src="img/gal-4-tall.jpg">
+                        <figcaption>wait</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-5.jpg" data-caption="Caption 3">
+                    <figure>
+                        <img src="img/gal-5.jpg">
+                        <figcaption>wait</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-7.jpg" data-caption="Caption 3">
+                    <figure>
+                        <img src="img/gal-7.jpg">
+                        <figcaption>wait</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-8.jpg" data-caption="Caption 3">
+                    <figure>
+                        <img src="img/gal-8.jpg">
+                        <figcaption>wait</figcaption>
+                    </figure>
+                </a>
+                <a href="img/gal-9.jpg" data-caption="Caption 3">
+                    <figure>
+                        <img src="img/gal-9.jpg">
+                        <figcaption>wait</figcaption>
+                    </figure>
+                </a>
+
+            </div> 
+            
        </div> 
     </section>
     
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <h2 class="intro__heading sect-heading">Testimonials</h2>
         
         <div class="grid gridFour maxWrapper">
@@ -468,6 +534,7 @@
         <i class="js-btt-btn-icon fa fa-chevron-up"></i>
     </a>
     
+    <script src="js/baguetteBox.js"></script>
     <script src="js/script.js"></script>
 </body>
 
